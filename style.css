@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	box-sizing: border-box;
+}
+body {
+    background-image: url('./images/bg-intro-mobile.png');
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; 
+}
+.form {
+    display: flex;
+}
+.form__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.25rem;
+    
+}
+.form__header--text1 {
+    color: white;
+    font-weight: 700;
+}
+.form__header--text2 {
+    color: white;
+    font-weight: 700;
+    padding-bottom: 1.625rem;
+}
+
+.form__header--paragrapgh {
+    color: white;
+    text-align: center;
+}
+.form__button {
+    border: 1px solid green;
+}
+.form__button--try {
+    background-color: rgb(93,84,163);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.form__wrapper {
+    background-color:rgb(254,254,255);
+    border-radius: 8px;
+
+}
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.form__confirm--button {
+    background-color: rgb(55,204,138);
+    width:17.25rem;
+    height: 3.375rem;
+    border-radius: 8px;
+    color: white;
+}
+.form__confirm {
+    border: 1px solid red;
+}
+.form__confirm--text {
+    text-align: center;
+    color:  hsl(246, 25%, 77%);
+    font-size: 0.625rem;
+}
+.form__confirm--text span {
+    color: rgb(231,136,134);
+}
+
+@media (max-width: 375px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__header--text1 {
+        font-size: 2rem;
+    }
+    .form__header--text2 {
+        font-size: 2rem;
+    }
+    
+    .form__button {
+        width: 20rem;
+        height: 5.5rem;
+        padding: 1.5rem;
+    }
+    .form__button--try {
+        width: 20rem;
+        height: 5.5rem;
+        font-size: 16px;
+        margin: 4.2rem auto auto 1.625rem;
+    }
+    .form__wrapper {
+        width: 20.3rem;
+        height: 27.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid black;
+        margin-top: 2rem;
+    } 
+    .form__box {
+        border:1px solid black;
+
+    }
+}
+

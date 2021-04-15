@@ -2,22 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<div class="form">
+    <div class="form__header">
+      <h1 class="form__header--text1">
+        <span>Learn to code by</span>
+      </h1>
+      <h1 class="form__header--text2">
+        <span>watching others</span>
+      </h1>
+        <p class="form__header--paragrapgh">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understaind how developers think is invalueable.
+        </p>
+    </div>
+    <button class="form__button--try">
+      <p><span>Try it free 7 days then</span></p>
+      <p> $20/mo. thereafter</p>
+     </button>
+   <!-- <div class="form__button">
+  </div>  -->
+   <form class="form__wrapper">
+      <div class="form__box">
+        <input type="text" id='fname' placeholder="First Name">
+        <p class="form__error">First Name cannot be empty</p>
+      </div>
+      <div class="form__box">
+        <input type="text" id='lname' placeholder="Last Name" class="form__box--input">
+        <p class="form__error">Last Name cannot be empty</p>
+      </div>
+      <div class="form__box">
+        <input type="email" id='email' placeholder="Email Address">
+        <p class="form__error">Looks like this is not an email</p>
+      </div>
+      <div class="form__box">
+        <input type="password" id='pass' placeholder="Password">
+        <p class="form__error">Password cannot be empty</p>
+      </div>
+      <button class="form__confirm--button">CLAIM YOUR FREE TRIAL</button>
+      <p class="form__confirm--text">
+        By clicking the button, you are agreeing to 
+      </p>
+      <p class="form__confirm--text">
+        our<span> Terms and Services</span>
+      </p>
+   </form>
 
-
-
-  
+</div>
 </body>
 </html>
+
