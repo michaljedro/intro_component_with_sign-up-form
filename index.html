@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor Intro component with sign up form</title>
 </head>
+
 <body>
-<div class="form">
-    <div class="form__header">
-      <h1 class="form__header--text1">
-        <span>Learn to code by</span>
+
+  <div class="wrapper">
+    <header class="logo">
+      <h1 class="logo__text">
+          Learn to code by
       </h1>
-      <h1 class="form__header--text2">
-        <span>watching others</span>
+      <h1 class="logo__text">
+          watching others
       </h1>
-        <p class="form__header--paragrapgh">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understaind how developers think is invalueable.
-        </p>
+      <p class="logo__paragrapgh">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+        understaind how developers think is invalueable.
+      </p>
+    </header>
+    <div class="button">
+      <button class="button__style">
+        <p class="button__style--text">
+          Try it free 7 days then
+        </p> 
+          $20/mo. thereafter
+      </button>
     </div>
-    <button class="form__button--try">
-      <p><span>Try it free 7 days then</span></p>
-      <p> $20/mo. thereafter</p>
-     </button>
-   <!-- <div class="form__button">
-  </div>  -->
-   <form class="form__wrapper">
-      <div class="form__box">
-        <input type="text" id='fname' placeholder="First Name">
-        <p class="form__error">First Name cannot be empty</p>
-      </div>
-      <div class="form__box">
-        <input type="text" id='lname' placeholder="Last Name" class="form__box--input">
-        <p class="form__error">Last Name cannot be empty</p>
-      </div>
-      <div class="form__box">
-        <input type="email" id='email' placeholder="Email Address">
-        <p class="form__error">Looks like this is not an email</p>
-      </div>
-      <div class="form__box">
-        <input type="password" id='pass' placeholder="Password">
-        <p class="form__error">Password cannot be empty</p>
-      </div>
-      <button class="form__confirm--button">CLAIM YOUR FREE TRIAL</button>
-      <p class="form__confirm--text">
-        By clicking the button, you are agreeing to 
-      </p>
-      <p class="form__confirm--text">
-        our<span> Terms and Services</span>
-      </p>
-   </form>
 
-</div>
+    <form class="form">
+      <div class="form__box">
+        <input type="text" id="fname" placeholder="First Name" class="form__box--input">
+        <p class="form__box--error">First Name cannot be empty</p>
+      </div>
+      <div class="form__box">
+        <input type="text" id="lname" placeholder="Last Name" class="form__box--input">
+        <p class="form__box--error">Last Name cannot be empty</p>
+      </div>
+      <div class="form__box">
+        <input type="email" id="email" placeholder="Email Address" class="form__box--input">
+        <p class="form__box--error">Looks like this is not an email</p>
+      </div>
+      <div class="form__box">
+        <input type="password" id="password" placeholder="Password" class="form__box--input">
+        <p class="form__box--error">Password cannot be empty</p>
+      </div>
+      <div class="form__button">
+        <button class="form__button--style">
+            CLAIM YOUR FREE TRIAL
+        </button>
+      </div>
+      <footer class="condition">
+        <p class="condtion__text">
+          By clicking the button, you are agreeing to
+        </p>
+        <p class="condition__text--bold">
+          our<span> Terms and Services</span>
+        </p>
+      </footer>
+    </form>
+  </div>
 </body>
-</html>
 
+</html>
