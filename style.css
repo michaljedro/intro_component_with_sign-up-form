@@ -14,7 +14,6 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
 .logo__text {
     color: white;
 }
@@ -35,20 +34,29 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif; 
-
+    
 }
 .form__button--style {
     color: white;
     background-color: rgb(55,204,138);
+    cursor: pointer;
 }
+.form__button--style:hover {
+    background-color: rgb(216,140,140);
 
+}
 .condition__text--bold span {
     color: rgb(216,140,140);
 }
 .form__box--error  {
-    color: rgb(250,121,116)
+    color: rgb(250,121,116);
+    visibility:hidden;
 }
-@media (min-width:375px) {
+.error {
+    color: rgb(250,121,116);
+    visibility: visible;
+}
+@media (max-width:375px) {
     .logo {
         margin-top:6.25rem;
     }
@@ -73,7 +81,7 @@ body {
         font-weight: bold;
     }
     .form {
-        margin-top: 1.5rem;
+        margin: 1.5rem auto;
         height: 26rem;
         width: 20rem;
         padding: 0 auto;
@@ -112,5 +120,28 @@ body {
           color:black;
     }
 }
-
+@media (min-width:376px) {
+    .wrapper {
+        display: flex;
+    }
+    .logo {
+        border: 5px solid black;
+        width: 43rem;
+        height: 50rem;
+    }
+    .logo__text {
+        margin-right: 9.8rem;
+        margin-left: 10rem ;  
+    }
+    .logo__text--first {
+        margin-top: 19rem;
+        margin-right: 9.8rem;
+        margin-left: 10rem ;
+    }
+    .logo__paragrapgh {
+        width: 32rem;
+        height: 5rem;
+        margin-left: 10rem;
+    }
+}
     
