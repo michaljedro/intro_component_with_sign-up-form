@@ -143,5 +143,10 @@ body {
         height: 5rem;
         margin-left: 10rem;
     }
+    .button__style {
+        width: 33.25rem;
+        height: 3.875rem;
+        border-radius: 8px;
+    }
 }
     
