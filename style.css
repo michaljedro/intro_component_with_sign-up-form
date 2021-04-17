@@ -142,7 +142,7 @@ body {
         margin-left: 10rem;
     }
     .button__style {
-        width: 33.25rem;
+        width: 34rem;
         height: 3.875rem;
         border-radius: 8px;
     }
@@ -164,5 +164,31 @@ body {
         align-items: center;
         justify-content: center;
     }
-}
-    
+    .form__box--input {
+        height: 3.25rem;
+        width: 29.5rem;
+        padding: 1rem; 
+        margin-top: 1rem;
+    }
+    .form__box--error {
+        text-align: center;
+    }
+    .form__button--style {
+        height: 3.25rem;
+        width: 29.5rem;
+        border-radius: 5px;
+    }
+    .condtion__text {
+        font-size: 1rem;
+    }
+    .condition__text--bold {
+        font-size: 1rem;
+        text-align: center;
+    }
+ }
+/* .form {
+    margin: 1.5rem auto;
+    height: 26rem;
+    width: 20rem;
+    padding: 0 auto;
+} */
